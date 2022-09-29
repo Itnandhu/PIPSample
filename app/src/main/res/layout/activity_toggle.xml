@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".ToggleActivity">
+
+    <RadioGroup
+        android:id="@+id/myRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radio_bg"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/btnStarDoctor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:background="@drawable/radio_selector"
+            android:button="@color/transparent"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:text="Star Doctors"
+            android:textColor="@color/text_color" />
+
+        <RadioButton
+            android:id="@+id/btnDoctorPartner"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:padding="8dp"
+            android:background="@drawable/radio_selector"
+            android:button="@color/transparent"
+            android:text="Doctor Partners"
+            android:textColor="@color/text_color" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
